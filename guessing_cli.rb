@@ -13,3 +13,5 @@ def run_guessing_game
     end
   end 
 end 
+
+#Had to use && input.to_i != 0 on second elsif to account for when user inputs "exit". When a string of letters is operated on with to_i, it returns 0. We do not want this elsif to run when the user inputs exit, so we need the condition to include that input.to_i is not equal to 0 in order to run.
